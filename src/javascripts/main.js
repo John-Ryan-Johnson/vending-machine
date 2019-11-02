@@ -3,6 +3,7 @@ import firebase from 'firebase';
 import auth from './components/Auth/auth';
 import authData from './helpers/data/authData';
 import myNavbar from './components/MyNavBar/MyNavBar';
+import machine from './components/machine/machine';
 
 import apiKeys from './helpers/apiKeys.json';
 
@@ -13,6 +14,7 @@ const init = () => {
   authData.checkLoginStatus();
   auth.loginButton();
   myNavbar.logoutEvent();
+  machine.buildTheMachine();
 };
 
 init();

@@ -1,0 +1,51 @@
+{
+  "snack1": {
+    "imageUrl": "https://www.cvs.com/bizcontent/merchandising/productimages/large/4000042431.jpg",
+    "name": "Snickers",
+    "price": "200",
+    "currentStocked": "5",
+    "lifetimeNum": "5",
+    "uid": "O3M85KmyKxTnqEvZK0VeZWuu0Hq1"
+  },
+
+    "snack2": {
+      "imageUrl": "https://i5.walmartimages.com/asr/2fb9c98b-bd28-47aa-bd35-4059a80a50a3_1.5bb9ddee152c028db1473979a526c7fe.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
+      "name": "Carmello",
+      "price": "200",
+      "currentStocked": "5",
+      "lifetimeNum": "5",
+      "uid": "O3M85KmyKxTnqEvZK0VeZWuu0Hq1"
+    
+  },
+
+
+    
+      "snack3": {
+        "imageUrl": "http://cdn.shopify.com/s/files/1/0972/7116/products/all-city-candy-milky-way-candy-bar-184-oz-candy-bars-mars-chocolate-1-bar-309852_600x.jpg?v=1557251420",
+        "name": "Milky Way",
+        "price": "250",
+        "currentStocked": "5",
+        "lifetimeNum": "5",
+        "uid": "O3M85KmyKxTnqEvZK0VeZWuu0Hq1"
+      },
+
+
+  "snack4": {
+    "imageUrl": "https://i.pinimg.com/originals/66/a7/91/66a7915365ea39283a908ed8912097ad.jpg",
+    "name": "Marathon Bar",
+    "price": "300",
+    "currentStocked": "5",
+    "lifetimeNum": "5",
+    "uid": "O3M85KmyKxTnqEvZK0VeZWuu0Hq1"
+  },
+
+
+  "snack5": {
+    "imageUrl": "https://i.pinimg.com/originals/7b/7a/84/7b7a8499f85ab083cae4033ba91b101d.jpg",
+    "name": "Bar None",
+    "price": "250",
+    "currentStocked": "5",
+    "lifetimeNum": "5",
+    "uid": "O3M85KmyKxTnqEvZK0VeZWuu0Hq1"
+}
+}
