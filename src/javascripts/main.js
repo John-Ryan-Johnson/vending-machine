@@ -2,8 +2,8 @@ import firebase from 'firebase';
 
 import auth from './components/Auth/auth';
 import authData from './helpers/data/authData';
-import myNavbar from './components/MyNavBar/MyNavBar';
-import machine from './components/machine/machine';
+import myNavbar from './components/myNavBar/myNavBar';
+import machine from './components/Machine/machine';
 
 import apiKeys from './helpers/apiKeys.json';
 

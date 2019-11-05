@@ -1,7 +1,7 @@
 import axios from 'axios';
-import apiKeys from '../apiKeys.json';
+import apikeys from '../apikeys.json';
 
-const baseUrl = apiKeys.firebaseKeys.databaseURL;
+const baseUrl = apikeys.firebaseKeys.databaseURL;
 
 const getAllSnackPositionsByMachineId = (machineId) => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/snackPositions.json?orderBy="machineId"&equalTo="${machineId}"`)
@@ -12,9 +12,13 @@ const getAllSnackPositionsByMachineId = (machineId) => new Promise((resolve, rej
         demSnackPositions[fbId].id = fbId;
         snackPositions.push(demSnackPositions[fbId]);
       });
-      resolve(snackPositions);
+      resolve(snackPositions); // [0] = hard code to only return first machine that comes back
     })
     .catch((error) => reject(error));
 });
 
-export default { getAllSnackPositionsByMachineId };
+const deleteSnackPosition = (snackPositionId) => axios.delete(`${baseUrl}/snackPositions/${snackPositionId}.json`);
+
+const createSnackPosition = (newSnackPosition) => axios.post(`${baseUrl}/snackPositions.json`, newSnackPosition);
+
+export default { getAllSnackPositionsByMachineId, deleteSnackPosition, createSnackPosition };
