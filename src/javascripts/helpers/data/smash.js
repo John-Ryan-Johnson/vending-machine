@@ -1,7 +1,8 @@
 import machineData from './machineData';
 import positionData from './positionData';
-import snackPositionData from './snackPosition';
+import snackPositionData from './snackPositionData';
 import snackData from './snackData';
+import authData from './authData';
 
 const getCompleteMachine = () => new Promise((resolve, reject) => {
   machineData.getMachine()
@@ -9,7 +10,7 @@ const getCompleteMachine = () => new Promise((resolve, reject) => {
     .then((positions) => {
       snackPositionData.getAllSnackPositionsByMachineId(positions[0].machineId)
         .then((snackPositions) => {
-          snackData.getSnacksByUid(positions[0].uid).then((snacks) => {
+          snackData.getSnacksByUid(authData.getCurrentUid()).then((snacks) => {
             const newPositions = [];
             positions.forEach((position) => {
               const newP = { ...position };
