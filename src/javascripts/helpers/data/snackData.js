@@ -21,6 +21,7 @@ const addNewSnack = (newSnack) => axios.post(`${baseUrl}/snacks.json`, newSnack)
 
 const updateSnack = (snackId, updatedSnack) => axios.put(`${baseUrl}/snacks/${snackId}.json`, updatedSnack);
 
+
 const buySnack = (snackId) => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/snacks/${snackId}.json`)
     .then((result) => {
@@ -31,6 +32,7 @@ const buySnack = (snackId) => new Promise((resolve, reject) => {
     })
     .catch((error) => reject(error));
 });
+
 
 const restock = (snackId, restockNum) => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/snacks/${snackId}.json`)
@@ -43,6 +45,7 @@ const restock = (snackId, restockNum) => new Promise((resolve, reject) => {
     })
     .catch((error) => reject(error));
 });
+
 
 export default {
   getSnacksByUid,
