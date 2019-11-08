@@ -12,7 +12,7 @@ const getMachine = () => new Promise((resolve, reject) => {
         demMachines[fbId].id = fbId;
         machines.push(demMachines[fbId]);
       });
-      resolve(machines[0]);// Hard code to only return first machine that comes back
+      resolve(machines[0]); // Hard code to only return first machine that comes back
     })
     .catch((error) => reject(error));
 });
